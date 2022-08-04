@@ -1,0 +1,24 @@
+Compiling C:\Users\imuxi\OneDrive\Documentos\tecnicas 2\DISPENSADOR\d2 on 08-mar.-22 at 15:50
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 104(32,45): Expect comma
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 106(41,54): Expect comma
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 108(45,58): Expect comma
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 112(37,50): Expect comma
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 114(46,59): Expect comma
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 116(37,50): Expect comma
+*** Error 51 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 123(19,20): A numeric expression must appear here
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 124(19,27): Expect comma
+*** Error 51 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 127(18,19): A numeric expression must appear here
+*** Error 51 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 149(14,15): A numeric expression must appear here
+*** Error 102 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 150(14,22): Expect comma
+*** Error 51 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 161(13,14): A numeric expression must appear here
+--- Info 300 "d2.c" Line 17(6,10): More info:   First Declaration of MAIN
+*** Error 31 "d2.c" Line 90(11,12): Identifier is already used in this scope
+*** Error 43 "d2.c" Line 93(4,9): Expecting a declaration
+*** Error 43 "d2.c" Line 93(9,10): Expecting a declaration
+*** Error 43 "d2.c" Line 93(10,15): Expecting a declaration
+*** Error 43 "d2.c" Line 93(14,15): Expecting a declaration
+*** Error 43 "d2.c" Line 94(4,5): Expecting a declaration
+*** Error 43 "d2.c" Line 98(4,5): Expecting a declaration
+*** Error 43 "d2.c" Line 100(1,2): Expecting a declaration
+      20 Errors,  0 Warnings.
+Build Failed.

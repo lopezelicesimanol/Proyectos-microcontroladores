@@ -1,0 +1,39 @@
+#include <16F887.h>
+#device  adc=10
+#fuses   XT,NOWDT,NOFCMEN,NOIESO,NOBROWNOUT
+#use     delay(crystal = 4Mhz)
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#use rs232 (BAUD=9600 , XMIT=PIN_C6, RCV=PIN_C7) 
+
+
+
+void main()
+{
+   
+
+float out,ecg;
+
+    setup_adc_ports(sAN0);
+    setup_adc(adc_clock_internal);
+    set_adc_channel(0);
+    delay_us(20);
+         
+   
+   
+   
+  do
+   {
+    
+     ecg=read_adc();
+     out=5*ecg/1023;
+     printf(" %0.2f V  \n",ecg); 
+     printf(" %0.2f  \r",out);
+  
+    
+    }
+      
+     while(true);
+    
+   }

@@ -1,0 +1,78 @@
+[PROJECT]
+Target=proyectofinal.hex
+Processor_Text=PIC16F887
+CCSVersion=5.076
+Compiler=PCM
+[Target Data]
+FileList=proyectofinal.c
+[proyectofinal.c]
+Type=4
+[mru-list]
+1=proyectofinal.c
+
+[defines]
+buildcount=61
+
+[Opened Files]
+1=proyectofinal.c
+t1=15
+Count=1
+
+[ProjectLog]
+Days=2
+D1=03-01-2022
+D1_L=29
+D1_L1=[59092]Stopped Editing.
+TotalEdit=86
+TotalDebug=0
+D1_E=86
+D1_D=0
+D1_L2=[59092]Project Closed.
+D1_L3=[59927]Project Opened.
+D1_L4=[60920]Started Editing.
+D1_L5=[61802]Stopped Editing.
+D1_L6=[62002]Started Editing.
+D1_L7=[62518]Stopped Editing.
+D1_L8=[62563]Started Editing.
+D1_L9=[62946]Stopped Editing.
+D1_L10=[65768]Started Editing.
+D1_L11=[66359]Stopped Editing.
+D1_L12=[68029]Project Opened.
+D1_L13=[68165]Started Editing.
+D1_L14=[68465]Stopped Editing.
+D1_L15=[69032]Started Editing.
+D1_L16=[70438]Stopped Editing.
+D1_L17=[70492]Started Editing.
+D1_L18=[70853]Stopped Editing.
+D1_L19=[70945]Started Editing.
+D1_L20=[71244]Stopped Editing.
+D1_L21=[71627]Started Editing.
+D1_L22=[71932]Stopped Editing.
+D1_L23=[71995]Started Editing.
+D1_L24=[72834]Stopped Editing.
+D1_L25=[72843]Started Editing.
+D1_L26=[73707]Stopped Editing.
+D1_L27=[75836]Started Editing.
+D1_L28=[76321]Stopped Editing.
+D1_L29=[76836]Project Closed.
+D2=04-01-2022
+D2_L=13
+D2_L1=[53120]Project Opened.
+D2_L2=[53127]Started Editing.
+D2_L3=[53565]Stopped Editing.
+D2_L4=[53635]Started Editing.
+D2_L5=[53952]Stopped Editing.
+D2_L6=[54747]Started Editing.
+D2_L7=[55511]Stopped Editing.
+D2_L8=[55796]Started Editing.
+D2_L9=[56108]Stopped Editing.
+D2_L10=[57481]Started Editing.
+D2_L11=[57860]Stopped Editing.
+D2_L12=[57986]Started Editing.
+D2_L13=[58796]Stopped Editing.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=proyectofinal (main)

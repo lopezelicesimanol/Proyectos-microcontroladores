@@ -1,0 +1,139 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-027 MAIN.ecg
+026-029 atan2.y
+028-02B MAIN.out
+02A-02D atan2.x
+02C     @delay_ms1.P1
+02C-02D @PRINTF_LU_9600_62_63.P2
+02C-02F @PRINTF_L32D_9600_62_63FPFPF.P3
+02C-02D @ITOF.P4
+02C     @PSTRINGCN7_9600_62_63.P5
+02C     MAIN.@SCRATCH1
+02D     MAIN.@SCRATCH2
+02D     @PSTRINGCN7_9600_62_63.@SCRATCH1
+02E-031 atan2.z
+02E     MAIN.@SCRATCH3
+02E     @PRINTF_LU_9600_62_63.@SCRATCH1
+02E     @PSTRINGCN7_9600_62_63.@SCRATCH2
+02F     MAIN.@SCRATCH4
+02F     @PRINTF_LU_9600_62_63.@SCRATCH2
+02F     @PSTRINGCN7_9600_62_63.@SCRATCH3
+030     @PRINTF_L32D_9600_62_63FPFPF.P1
+030-033 @DIVFF.P2
+030     @PRINTF_LU_9600_62_63.@SCRATCH3
+030     @PSTRINGCN7_9600_62_63.@SCRATCH4
+031     @PRINTF_LU_9600_62_63.@SCRATCH4
+031     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH1
+032.0   atan2.sign
+032     @PRINTF_LU_9600_62_63.@SCRATCH5
+032     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH2
+033     atan2.quad
+033     @PRINTF_LU_9600_62_63.@SCRATCH6
+033     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH3
+034-037 @DIVFF.P1
+034     @PRINTF_LU_9600_62_63.@SCRATCH7
+034     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH4
+035     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH5
+036     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH6
+037     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH7
+038     @DIVFF.@SCRATCH1
+038     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH8
+039-03C @FTOSD.P1
+039-03C @DIV3232.P2
+039-03C @MULFF.P3
+039     @DIVFF.@SCRATCH2
+03A     @DIVFF.@SCRATCH3
+03B     @DIVFF.@SCRATCH4
+03C     @DIVFF.@SCRATCH5
+03D-040 @DIV3232.P1
+03D-040 @MULFF.P2
+03D     @DIVFF.@SCRATCH6
+03D     @FTOSD.@SCRATCH1
+041     @MULFF.@SCRATCH1
+041     @DIV3232.@SCRATCH1
+042     @MULFF.@SCRATCH2
+042     @DIV3232.@SCRATCH2
+043     @MULFF.@SCRATCH3
+043     @DIV3232.@SCRATCH3
+044     @MULFF.@SCRATCH4
+044     @DIV3232.@SCRATCH4
+045     @MULFF.@SCRATCH5
+045     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const1054.call
+000009  @const1059.call
+00000F  @ITOF
+00002E  @MULFF
+0000A3  @DIVFF
+00016F  @PRINTF_LU_9600_62_63
+0001CA  @PSTRINGCN7_9600_62_63
+000223  @DIV3232
+000272  @PRINTF_L32D_9600_62_63FPFPF
+000299  @FTOSD
+000358  @delay_ms1
+00036F  @cinit1
+00036F  MAIN
+00038C  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\imuxi\OneDrive\Documentos\tecnicas 2\
+
+Project Files:
+    proyectofinal.c                                         [04-ene.-22 16:14  CRC=2765203E]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F887.h [15-ene.-18 15:53  CRC=9C71CB72]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-jul.-07 14:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [26-mar.-15 12:34  CRC=C4814297]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [05-sep.-14 11:47  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 14:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [29-jun.-16 09:34  CRC=7E9CC16B]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h  [22-sep.-16 08:36  CRC=9CF8C837]
+
+Source signature=45C7A31F
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=653D
+
+Units:
+    proyectofinal (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   proyectofinal.xsym
+    Errors:      proyectofinal.err
+    Ext Symbols: proyectofinal.esym
+    INHX8:       proyectofinal.hex
+    Symbols:     proyectofinal.sym
+    List:        proyectofinal.lst
+    Debug/COFF:  proyectofinal.cof
+    Project:     proyectofinal.ccspjt
+    Call Tree:   proyectofinal.tre
+    Statistics:  proyectofinal.STA

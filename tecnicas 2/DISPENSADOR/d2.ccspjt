@@ -1,0 +1,40 @@
+[PROJECT]
+Target=C:\Users\imuxi\OneDrive\Documentos\tecnicas 2\DISPENSADOR\d2.hex
+Processor_Text=PIC18F4550
+CCSVerions=5.076
+Compiler=PCH
+[Target Data]
+FileList=d2.c
+[Directories]
+Include=
+[C:\Users\imuxi\OneDrive\Documentos\tecnicas 2\DISPENSADOR\d2]
+Type=4
+[mru-list]
+1=d2.c
+[Units]
+Count=1
+1=d2 (main)
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=08-03-2022
+D1_L=3
+D1_L1=[56822]Project Opened.
+D1_L2=[56841]Started Editing.
+D1_L3=[57352]Stopped Editing.
+
+[Opened Files]
+1=d2.c
+t1=21
+2=d1.c
+t2=1
+Count=5
+3=i2c_Flex_LCD.c
+t3=135
+4=..\..\..\..\AppData\Local\Temp\Rar$DIa2688.6129\LCD_via_I2C.c
+t4=57
+5=..\..\..\..\AppData\Local\Temp\Rar$DIa2688.7162\i2c_Flex_LCD.c
+t5=1

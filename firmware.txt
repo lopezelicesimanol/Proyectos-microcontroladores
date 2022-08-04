@@ -1,0 +1,60 @@
+   #include <16F877.h>
+    #device adc=10
+   #FUSES XT,NOWDT
+
+
+   #use delay( clock=4000000 )
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <math.h>
+ #use fast_io(B)
+  #use fast_io(C)
+  #use fast_io(D)
+#use rs232 (BAUD=9600 , XMIT=PIN_C6, RCV=PIN_C7) 
+
+
+void main()
+{ 
+    setup_adc(adc_clock_internal);
+    setup_adc_ports();
+    set_tris_B(0);
+    set_tris_C(0);
+    set_tris_D(0);
+ 
+    int lm35=0;
+    
+    int temp=0;
+   
+    int l=5,h=60;
+ 
+ 
+   
+  
+   do
+   {
+      set_adc_channel(0);
+    
+    lm35=Read_ADC();
+ 
+     temp=(lm35*50)/1023;
+      printf("\nTemperatura:%i\r",temp);
+      delay_ms(1000);
+      if(temp==l)
+      {
+	output_high(pin_c0);
+	 delay_ms(200);
+	 
+	 
+      }
+      
+      
+      if(temp==h)
+      { 
+       output_high(pin_c1);
+	 delay_ms(200);
+      }
+      
+    
+  
+}while(1);
+}

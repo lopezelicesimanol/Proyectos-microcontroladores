@@ -1,0 +1,50 @@
+#include <16F887.h>
+#device  adc=10
+#fuses   XT,NOWDT,NOFCMEN,NOIESO,NOBROWNOUT
+#use     delay (clock=4Mhz)
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#use rs232 (BAUD=9600 , XMIT=PIN_C6, RCV=PIN_C7) 
+
+
+#int_timer0
+
+void timer_0()
+
+   {
+    
+    set_timer0(6);
+   }
+void main()
+{
+   
+
+int16 ecg;
+float out;
+    setup_timer_0(rtcc_internal|rtcc_div_2);
+    set_timer0(6);
+    enable_interrupts(int_timer0);
+    enable_interrupts(global);
+    setup_adc_ports(sAN0);
+    setup_adc(adc_clock_internal);
+    set_adc_channel(0);
+    delay_us(20);
+         
+   
+   
+   
+  do
+   {
+    
+     ecg=read_adc();
+     out=5.0*ecg/1024.0;
+     printf(" %4Lu   \n",ecg); 
+     printf(" %04.2f  \r",out);
+  
+    
+    }
+      
+     while(true);
+    
+   }

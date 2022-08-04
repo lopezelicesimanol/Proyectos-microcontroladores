@@ -1,0 +1,35 @@
+
+
+#include <16F887.h>
+#device adc=10
+#fuses  XT,NOWDT
+#use delay( clock=4000000 )
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#use rs232 (BAUD=9600 , XMIT=PIN_C6, RCV=PIN_C7) 
+
+
+int16 lm35=0;
+float temp=0;
+   
+
+void main()
+{
+    setup_adc(adc_clock_internal);
+    setup_adc_ports(all_analog);
+   
+   
+   
+  do
+   {
+      set_adc_channel(0);
+      delay_us(20);
+      lm35=read_adc();
+      temp=(lm35*500/1024.0);
+      printf("\nLa temperatura es\n: %1.3f\r" , temp);
+      delay_ms(500);
+   }
+   while(1);
+      
+}

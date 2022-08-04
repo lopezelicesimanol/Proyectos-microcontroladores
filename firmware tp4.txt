@@ -1,0 +1,67 @@
+
+
+#include <16F887.h>
+#device adc=10
+#fuses  XT,NOWDT
+#use delay( clock=4000000 )
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <lcd.c>
+#use rs232 (BAUD=9600 , XMIT=PIN_C6, RCV=PIN_C7) 
+
+
+int16 lm35=0;
+float temp=0;
+   
+
+void main()
+{
+    setup_adc(adc_clock_internal);
+    setup_adc_ports(all_analog);
+   SET_TRIS_B(0xff);
+    lcd_init();
+   
+   printf(lcd_putc, "Bienvenido\r");
+   delay_ms(500);
+   
+  do
+   {
+      set_adc_channel(0);
+      delay_us(20);
+      lm35=read_adc();
+      temp=(lm35*500/1024.0);
+      lcd_gotoxy(1,1);
+      delay_ms(200);
+      
+      printf("La temperatura es: %1.3f C\r" , temp);
+      delay_ms(500);
+     
+      printf(lcd_putc,"La temperatura\nes:%1.3f C" , temp);
+      delay_ms(500);
+      if(temp>5)
+      {
+	 output_b(0x01);
+	 delay_ms(50);
+      }
+      else
+      {
+	 output_b(0x00);
+	 delay_ms(50);
+      }
+      if(temp<20)
+	 {
+	 output_b(0x01);
+	 delay_ms(50);
+         }
+	 else
+      {
+	 output_b(0x00);
+	 delay_ms(50);
+      }
+}
+   while(1);
+      
+}
+
+      

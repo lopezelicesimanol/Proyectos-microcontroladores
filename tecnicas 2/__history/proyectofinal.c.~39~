@@ -1,0 +1,39 @@
+#include <16F887.h>
+#device adc=10
+#fuses  XT,NOWDT ,NOMCLR
+#use delay( clock=4000000 )
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#use rs232 (BAUD=9600 , XMIT=PIN_C6, RCV=PIN_C7) 
+
+
+void main()
+{
+   
+int16 ecg=0;
+float out=0;
+
+    setup_adc(adc_clock_internal);
+    setup_adc_ports(all_analog);
+    SET_TRIS_B(0xff);
+    set_adc_channel(0);
+     delay_us(20);
+         
+   
+   
+   
+  do
+   {
+  
+     ecg=read_adc();
+     
+     out=5.12*ecg/512;
+     printf(" %Lu \n",ecg); 
+     printf(" %04.2f  \r",out);
+     delay_ms(100);
+    }
+      
+     while(true);
+    
+   }
